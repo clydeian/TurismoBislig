@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.CMJT.turismobislig"
+    android:versionCode="5"
+    android:versionName="1.4" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="19" />
+
+    <supports-screens
+        android:largeScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <!-- External storage for caching. -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- My Location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- Maps API needs OpenGL ES 2.0. -->
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    <!-- End of copy. -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon4"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBYekSwl9QP8H7364RILXYSlqZzi9SiFtw" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="4030500" />
+
+        <!-- Set Up Splash -->
+        <activity
+            android:name=".Splash"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- Menu List Permissions -->
+        <activity
+            android:name=".AboutBislig"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MapLocation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- Marker Page Permissions -->
+        <activity
+            android:name=".Tyffany"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Highland"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Babano"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Baywalk"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Bianos"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".CasadeBabano"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".DansGrill"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Gails"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Hinayagan"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Inato"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Jmstar"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MyDung"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".PaperCountryInn"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".PensioneLaSalle"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ShielasPensionHouse"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SleepInn"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".StFrancisPensionHouse"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Tinuyan"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".TyffanysInn"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ViolysPensionHouse"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".YolandaInn"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".TouristSpots"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Restaurants"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Accomodations"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".EmergencyNumber"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MapBisligbaywalk"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MapHinayaganCave"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MapTinuyanFalls"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MapTyfanny"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MapHighland"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MapMyDung"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MapGails"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MapBabano"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MapBianos"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MapJmStar"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MapDansGrill"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MapChickenInato"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MapPCI"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MapShielasPensionHouse"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MapPLS"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MapCasaDeBabano"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MapTyfannysInn"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MapSleepInn"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MapYolandaInn"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MapViolysPensionHouse"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MapStFrancisHotel"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Oceanview"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MapOVP"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MapHagonoy"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Hagonoy"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Florland"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MapFlorland"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".TheRock"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".PNB"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".DBP"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Landbank"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".GreenBank"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MercuryDrug"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".GenericsPharmacy"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Tricycle"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Jeep"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Habalhabal"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".BusTerminal"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MapJeep"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MapTricycle"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MapHabal"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MapBus"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SeaPort"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MapSeaPort"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MapTheRock"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Necessities"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MapPNB"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MapDBP"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MapLandbank"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MapGreenbank"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MapMercurydrug"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MapGenerics"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".NayTitays"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MapNaytitays"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".TonysStore"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".GmarsCommercial"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MapTonys"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MapGmars"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".BonsayRiverviewInn"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".WhitePalaceInn"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MapWhitePalaceInn"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MapBonsayRiverviewInn"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MapVanForHire"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".VanForHire"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Kawakawa"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MapKawakawa"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MaptoCityHall"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>
