@@ -3,6 +3,9 @@
  */
 package com.CMJT.turismobislig;
 
+import com.CMJT.turismobislig.utils.Constants;
+import com.google.android.gms.maps.model.LatLng;
+
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -44,8 +47,16 @@ public class Babano extends Activity {
 
 			@Override
 			public void onClick(View v) {
-				startActivity(new Intent(Babano.this, MapBabano.class));
-
+				Bundle args = new Bundle();
+				args.putParcelable("mapLatLng", Constants.LATLOCS[Constants.BABANO]);
+				args.putString("mapTitle", Constants.TITLES[Constants.BABANO]);
+				
+				Intent i= new Intent(Babano.this, MapGeneric.class);
+				i.putExtra("bundle", args);
+				
+				startActivity(i);
+				
+				//startActivity(new Intent(Babano.this, MapBabano.class));
 			}
 		});
 

@@ -197,6 +197,10 @@
             android:screenOrientation="portrait" >
         </activity>
         <activity
+            android:name=".MapGeneric"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
             android:name=".MapBianos"
             android:screenOrientation="portrait" >
         </activity>
